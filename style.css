@@ -37,7 +37,7 @@ button {
     height: 100px;
     display: flex;
     align-items: center;
-    gap: 172px;
+    gap: 172px;  
 }
 
 .header__menu {
@@ -45,8 +45,46 @@ button {
     gap: 20px;
 }
 
+.header__mobile-menu {
+    display: none;
+    position: relative;
+}
+
+.header__menu-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 41, 41);
+    padding: 70px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in;
+}
+
+.header__menu-mobile .header__link {
+    font-size: 20px;
+}
+
+.header__mobile-menu_display {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__menu-exit {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
 .header__list {
     list-style: none;
+}
+
+.header__list_mg {
+    margin: 30px 0;
+    position: relative;
 }
 
 .header__link {
@@ -70,7 +108,7 @@ button {
 
 .top__title {
     color: rgba(255, 255, 255, 1);
-    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 5%;
@@ -79,7 +117,7 @@ button {
 
 .top__about {
     color: rgba(255, 255, 255, 1);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0%;
@@ -114,7 +152,7 @@ button {
 
 .overview-box__subtitle {
     color: rgba(0, 0, 0, 1);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
@@ -151,7 +189,7 @@ button {
 
 .Features__subtitle {
     color: rgba(0, 0, 0, 1);
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0%;
@@ -161,6 +199,7 @@ button {
 
 .Features__box {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -235,20 +274,30 @@ button {
 }
 
 .form-sending {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 25px;
+}
+
+.form-sending__top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.form-sending__top .form-sending__input {
+    width: 255px;
 }
 
 .form-sending__input {
     box-sizing: border-box;
     border-radius: 6px;
     outline: none;
+    border: none;
     color: rgba(19, 39, 67, 0.5);
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: 0%;
     padding: 20px 30px;
 }
 
@@ -257,20 +306,11 @@ button {
     font-size: 16px;
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: 0%;
     text-align: left;
 }
 
-.form-sending__input-1 {
-    border: none;
-}
-
-.form-sending__input-2 {
-    border: none;
-}
-
 .form-sending__input-big {
-    grid-column: 1 / 5;
+    width: 540px;
     appearance: none;
     border: 1px solid rgba(51, 51, 51, 1);
 }
@@ -288,10 +328,9 @@ button {
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
     line-height: 100%;
-    letter-spacing: 0%;
     text-transform: uppercase;
     padding: 16px 34px;
-    width: 160px;
+    align-self: start;
 }
 
 .footer {

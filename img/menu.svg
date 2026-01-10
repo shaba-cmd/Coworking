@@ -1,0 +1,7 @@
+<svg viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000" height="17.000000" fill="none" customFrame="#000000">
+	<g id="Сочетание 1">
+		<line id="Линия 1" x1="0" x2="24" y1="0.5" y2="0.5" stroke="rgb(255,255,255)" stroke-width="1" />
+		<line id="Линия 2" x1="0" x2="24" y1="8.5" y2="8.5" stroke="rgb(255,255,255)" stroke-width="1" />
+		<line id="Линия 3" x1="0" x2="24" y1="16.5" y2="16.5" stroke="rgb(255,255,255)" stroke-width="1" />
+	</g>
+</svg>
