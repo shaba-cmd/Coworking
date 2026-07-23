@@ -1,14 +1,11 @@
-## Fast Food
-
-Интернет-магазин для доставки Суши
+# Coworking
 
 ## Технологии
 
 * HTML5
 * CSS3
 * JS
-* LocalStorage
 
 ## Деплой 
 
-https://fast-food-rose.vercel.app/
+https://coworking-seven.vercel.app/
