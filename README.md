@@ -9,7 +9,6 @@
 * JS
 * LocalStorage
 
-* 
 ## Деплой 
 
 https://fast-food-rose.vercel.app/
